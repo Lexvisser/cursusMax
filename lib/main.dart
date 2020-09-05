@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
             title: Text('My first Barretej'), backgroundColor: Colors.blueGrey),
-        body: Text('wat maak je me nuu'),
+        body: Text('wat maak je me nu'),
       ),
     );
   }
