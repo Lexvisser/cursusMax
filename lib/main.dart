@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
             title: Text('My first Barretje'), backgroundColor: Colors.blue),
         body: Column(
+          //mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('the question'),
             RaisedButton(
