@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
             RaisedButton(
               child: Text('Answer 2'),
               onPressed: null,
+              color: Colors.green[400],
             ),
             RaisedButton(child: Text('Answer 3'), onPressed: null),
           ],
