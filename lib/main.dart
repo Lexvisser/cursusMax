@@ -1,9 +1,8 @@
-double addNumbers(double num1, double num2) {
-  //print(num1 + num2);
-  return (num1 + num2);
-}
+import 'package:flutter/material.dart';
 
-void main() {
-  print(addNumbers(1.3, 4.7));
-  print('Hello');
+void main(){}
+
+class MyApp extends StatelessWidget{
+  Widget build(BuildContext context){
+  return MaterialApp(home: Text ('Hello!'),);
 }
