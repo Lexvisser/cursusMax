@@ -21,7 +21,14 @@ class MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    var questions = ['what\'s your favorite color', 'what\'s your penislength'];
+    var questions = [
+      'what\'s your favorite color',
+      'what\'s your penislength',
+      'hahahaha',
+      'hoeoeoeoeoeoe',
+      'kasdjkhasdkjfhkjasdhf',
+      'lsdakl;asdfkl;sdkl;kl;sdkl;sdl;k'
+    ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -37,21 +44,17 @@ class MyAppState extends State<MyApp> {
             ),
             RaisedButton(
               child: Text('Answer 2'),
-              onPressed: () => print('hello'),
+              onPressed: answerQuestion,
               color: Colors.green[400],
             ),
             RaisedButton(
                 child: Text('Answer 3'),
                 color: Colors.lime[400],
-                onPressed: () {
-                  print('hello again');
-                }),
+                onPressed: answerQuestion),
             RaisedButton(
                 child: Text('Answer 4'),
                 color: Colors.yellow[400],
-                onPressed: () {
-                  print('hello again');
-                }),
+                onPressed: answerQuestion),
           ],
         ),
       ),
