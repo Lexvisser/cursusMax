@@ -42,8 +42,14 @@ class MyAppState extends State<MyApp> {
             ),
             RaisedButton(
                 child: Text('Answer 3'),
+                color: Colors.lime[400],
                 onPressed: () {
-                  //...
+                  print('hello again');
+                }),
+            RaisedButton(
+                child: Text('Answer 4'),
+                color: Colors.yellow[400],
+                onPressed: () {
                   print('hello again');
                 }),
           ],
