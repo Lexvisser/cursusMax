@@ -32,6 +32,7 @@ class MyAppState extends State<MyApp> {
             Text(questions[questionIndex]),
             RaisedButton(
               child: Text('Answer 1'),
+              color: Colors.blueAccent[400],
               onPressed: answerQuestion,
             ),
             RaisedButton(
