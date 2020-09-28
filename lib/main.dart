@@ -5,18 +5,18 @@ void main() => runApp(MyApp());
 class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return MyAppState();
+    return _MyAppState();
   }
 }
 
-class MyAppState extends State<MyApp> {
-  var questionIndex = 0;
+class _MyAppState extends State<MyApp> {
+  var _questionIndex = 0;
 
-  void answerQuestion() {
+  void _answerQuestion() {
     setState(() {
-      questionIndex = questionIndex + 1;
+      _questionIndex = _questionIndex + 1;
     });
-    print(questionIndex);
+    print(_questionIndex);
   }
 
   @override
@@ -36,30 +36,30 @@ class MyAppState extends State<MyApp> {
         body: Column(
           //mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(questions[questionIndex]),
+            Text(questions[_questionIndex]),
             RaisedButton(
               child: Text('Answer 1'),
               color: Colors.blueAccent[400],
-              onPressed: answerQuestion,
+              onPressed: _answerQuestion,
             ),
             RaisedButton(
               child: Text('Answer 2'),
-              onPressed: answerQuestion,
+              onPressed: _answerQuestion,
               color: Colors.green[400],
             ),
             RaisedButton(
                 child: Text('Answer 3'),
                 color: Colors.lime[400],
-                onPressed: answerQuestion),
+                onPressed: _answerQuestion),
             RaisedButton(
                 child: Text('Answer 4'),
                 color: Colors.yellow[400],
-                onPressed: answerQuestion),
+                onPressed: _answerQuestion),
             RaisedButton(
-                onPressed: () {},
-                child: Text("Test"),
-                highlightColor: Colors.black, //Replace with actual colors
-                color: Colors.indigo),
+                child: Text("Highlight"),
+                highlightColor: Colors.red, //Replace with actual colors
+                color: Colors.yellow,
+                onPressed: _answerQuestion),
           ],
         ),
       ),
