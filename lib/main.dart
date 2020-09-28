@@ -55,6 +55,11 @@ class MyAppState extends State<MyApp> {
                 child: Text('Answer 4'),
                 color: Colors.yellow[400],
                 onPressed: answerQuestion),
+            RaisedButton(
+                onPressed: () {},
+                child: Text("Test"),
+                highlightColor: Colors.black, //Replace with actual colors
+                color: Colors.indigo),
           ],
         ),
       ),
